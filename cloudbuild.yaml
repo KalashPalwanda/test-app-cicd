@@ -11,5 +11,5 @@ steps:
     - '--region=${_REGION}'
     - '--platform=managed'
     - '--allow-unauthenticated'
-    - '--service-account=${test-app-cicd@dev-ecb-data-lake.iam.gserviceaccount.com}'
+    - '--service-account=${_SERVICE_ACCOUNT_EMAIL}'
     - '--image=gcr.io/${PROJECT_ID}/${_SERVICE_NAME}:$SHORT_SHA'
